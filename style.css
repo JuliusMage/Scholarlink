@@ -1,0 +1,151 @@
+/* Basic resets */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f7fafc;
+  color: #2d3748;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: #3182ce;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  background-color: #1a202c;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a {
+  margin-right: 1rem;
+  font-weight: bold;
+  color: #e2e8f0;
+}
+header nav a:last-child {
+  margin-right: 0;
+}
+header nav a:hover {
+  color: #fff;
+}
+
+main {
+  flex: 1;
+  padding: 1rem 2rem;
+}
+
+footer {
+  background-color: #1a202c;
+  color: #a0aec0;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background-color: #2b6cb0;
+  color: white;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+.button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #3182ce;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.button:hover {
+  background-color: #2b6cb0;
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.card h3 {
+  margin-top: 0;
+}
+.tag {
+  display: inline-block;
+  background-color: #e2e8f0;
+  color: #2d3748;
+  padding: 0.2rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+/* Forms */
+.form-group {
+  margin-bottom: 1rem;
+}
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #cbd5e0;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+textarea {
+  resize: vertical;
+}
+
+/* Grid for scholarships */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+/* Responsive nav */
+@media (max-width: 600px) {
+  header nav {
+    display: flex;
+    flex-direction: column;
+  }
+  header nav a {
+    margin: 0.5rem 0;
+  }
+}
